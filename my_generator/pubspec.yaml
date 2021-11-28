@@ -1,0 +1,17 @@
+name: my_generator
+description: A simple command-line application.
+version: 1.0.0
+publish_to: 'none'
+# homepage: https://www.example.com
+
+environment:
+  sdk: '>=2.14.4 <3.0.0'
+
+
+dependencies:
+  path: ^1.8.0
+  source_gen: ^1.1.1
+
+dev_dependencies:
+  build_runner: ^2.1.5
+  lints: ^1.0.0

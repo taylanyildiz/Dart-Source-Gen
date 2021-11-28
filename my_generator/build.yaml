@@ -1,0 +1,15 @@
+builders:
+  infoGeneratorBuilder:
+    import: 'package:my_generator/my_generator.dart'
+    builder_factories: ['infoGeneratorBuilder']
+    auto_apply: dependents
+    build_extensions: {".dart":[".info.part.dart"]}
+    build_to: cache #source
+    applies_builders: ["source_gen|combining_builder"]
+  extrasGeneratorBuilder:
+    import: 'package:my_generator/my_generator.dart'
+    builder_factories: ['extrasGeneratorBuilder']
+    auto_apply: dependents
+    build_extensions: {".dart":[".extras.part.dart"]}
+    build_to: cache #source
+    applies_builders: ["source_gen|combining_builder"]

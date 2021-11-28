@@ -1,0 +1,11 @@
+targets:
+  $default:
+    builders:
+      my_generator|infoGeneratorBuilder:
+        enabled: True
+        generate_for:
+          - lib/src/*
+      my_generator|extrasGeneratorBuilder:
+        enabled: True
+        generate_for:
+          - lib/gen/*
